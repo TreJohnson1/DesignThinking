@@ -31,8 +31,12 @@ with open('/home/pi/Desktop/image.jpg', 'rb') as f:
     file_name = f.name
     msg.add_attachment(file_data, maintype='image',subtype=file_type,filename=file_name)
 
-#for the message
+
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 
   smtp.login(Email_ADDRESS,Email_PASSWORD)
-  smtp.send_message(msg)
+  smtp.send_message(msg) #for the message
+
+  
+Course taught by:
+    Corey Schafer 
